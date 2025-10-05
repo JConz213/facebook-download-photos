@@ -111,7 +111,7 @@ def go():
         email.send_keys(args.email)
         password.send_keys(args.password)
         submit.click()
-        time.sleep(3) # wait this many seconds
+        time.sleep(90) # wait this many seconds
         if is_two_step(browser):
             input('🚨 There is a captcha or two-auth, please complete and then press enter to continue. 🚨')
             time.sleep(90)
