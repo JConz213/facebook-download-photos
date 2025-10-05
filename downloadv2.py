@@ -114,7 +114,7 @@ def go():
         time.sleep(3) # wait this many seconds
         if is_two_step(browser):
             input('🚨 There is a captcha or two-auth, please complete and then press enter to continue. 🚨')
-            time.sleep(3)
+            time.sleep(90)
         browser.get(browser.current_url)
 
     if not logged_in(browser):
